@@ -17,17 +17,24 @@ func main() {
 	// 	fmt.Println(num[i])
 	// }
 
-	var nums [5]int
+	// var nums [5]int
 
-	fmt.Println("Enter your fav number")
-	fmt.Scan(&nums)
+	// fmt.Println("Enter your fav number")
+	// fmt.Scan(&nums)
 
-	for i := 0; i < 5; i++ {
+	// for i := 0; i < 5; i++ {
 
-		fmt.Println("enter your number")
-		fmt.Scan(&nums[i])
-	}
-	fmt.Println("ArreyL: ", nums)
+	// 	fmt.Println("enter your number")
+	// 	fmt.Scan(&nums[i])
+	// }
+	// fmt.Println("ArreyL: ", nums)
+
+	// var num [3]int
+	// for i := 0; i < 3; i++ {
+	// 	fmt.Println("enter your number...")
+	// 	fmt.Scan(&num[i])
+	// }
+	// fmt.Println(num)
 
 	number := [5]int{10, 20, 30, 40, 50}
 	sum := 0

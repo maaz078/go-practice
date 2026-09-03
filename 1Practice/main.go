@@ -66,19 +66,19 @@ func main() {
 	// fmt.Println(aa <= bb)
 
 	//1
-	var m int
-	var n int
-	fmt.Println("enter your number")
-	fmt.Scan(&m)
-	fmt.Println("enter you second number")
-	fmt.Scan(&n)
-	fmt.Println("your number sum is...", m+n)
-	fmt.Println("your number minus is...", m-n)
-	fmt.Println("your number multi is...", m*n)
-	fmt.Println("your number div is...", m/n)
-	fmt.Println("your number remain is...", m%n)
+	// var m int
+	// var n int
+	// fmt.Println("enter your number")
+	// fmt.Scan(&m)
+	// fmt.Println("enter you second number")
+	// fmt.Scan(&n)
+	// fmt.Println("your number sum is...", m+n)
+	// fmt.Println("your number minus is...", m-n)
+	// fmt.Println("your number multi is...", m*n)
+	// fmt.Println("your number div is...", m/n)
+	// fmt.Println("your number remain is...", m%n)
 
-	//2
+	// //2
 	var nn int
 	fmt.Println("enter your best number..")
 	fmt.Scan(&nn)

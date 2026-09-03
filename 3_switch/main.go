@@ -1,8 +1,41 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
+	switch time.Now().Weekday() {
+	case time.Saturday, time.Sunday:
+		fmt.Println("weekend")
+	default:
+		fmt.Println("weekday")
+	}
+
+	whoiam := func(i interface{}) {
+		switch t := i.(type) {
+		case string:
+			fmt.Println("its a string")
+		case int:
+			fmt.Println("its a int")
+		case bool:
+			fmt.Println("its a boolean", t)
+		}
+	}
+	whoiam("hello")
+	// 	num := 2
+	// 	switch num {
+	// 	case 1:
+	// 		fmt.Println("one")
+	// 	case 2:
+	// 		fmt.Println("two")
+	// 	case 3:
+	// 		fmt.Println("three")
+	// 	default:
+	// 		fmt.Println("other")
+	// 	}
+
 	//Write a Go program that takes a number from the user and prints the corresponding day.
 
 	// var day int
@@ -18,7 +51,7 @@ func main() {
 	// 	fmt.Println("wednessday")
 	// case 4:
 	// 	fmt.Println("thursday")
-	// case 5:
+	// case 5:;
 	// 	fmt.Println("friday")
 	// case 6:
 	// 	fmt.Println("saturday")
@@ -67,16 +100,17 @@ func main() {
 
 	//Write a Go program that takes a traffic light color as input.
 
-	var color string
-	fmt.Println("enter your traffic color...")
-	fmt.Scan(&color)
+	// var color string
+	// fmt.Println("enter your traffic color...")
+	// fmt.Scan(&color)
 
-	switch color {
-	case "yellow":
-		fmt.Println("go slow")
-	case "green":
-		fmt.Println("go fast")
-	case "red":
-		fmt.Println("stop!")
-	}
+	// switch color {
+	// case "yellow":
+	// 	fmt.Println("go slow")
+	// case "green":
+	// 	fmt.Println("go fast")
+	// case "red":
+	// 	fmt.Println("stop!")
+	// }
+
 }

@@ -7,7 +7,17 @@ func main() {
 	// 	fmt.Println(i)
 	// }
 
+	// for i := 1; i <= 5; i++ {
+	// 	fmt.Println(i)
+	// }
+
 	// for i := 1; i <= 20; i++ {
+	// 	if i%2 != 0 {
+	// 		fmt.Println(i)
+	// 	}
+	// }
+
+	// for i := 1; i <= 10; i++ {
 	// 	if i%2 != 0 {
 	// 		fmt.Println(i)
 	// 	}
@@ -27,12 +37,25 @@ func main() {
 	// for i := 1; i <= 10; i++ {
 	// 	fmt.Println(num, "x", i, "=", num*i)
 	// }
+	// var num int
+	// fmt.Println("enter you table number: ")
+	// fmt.Scan(&num)
+
+	// for i := 1; i <= 10; i++ {
+	// 	fmt.Println(num, "X", i, "=", num*i)
+	// }
 
 	// sum := 0
 	// for i := 1; i <= 10; i++ {
 	// 	sum = sum + i
 	// }
 	// fmt.Println("Sum = ", sum)
+
+	// sum := 1
+	// for i := 1; i <= 10; i++ {
+	// 	sum = sum * i
+	// }
+	// fmt.Println(sum)
 
 	//Write a Go program to print numbers from 1 to 100 using a for loop.
 
@@ -76,8 +99,8 @@ func main() {
 	fmt.Println("enter your number")
 	fmt.Scan(&n)
 
-	for i := 1; i <= n; i++ {
+	for i := 1; i <= 10; i++ {
 		factorial = factorial * i
 	}
-	fmt.Println("Factorial: ", factorial)
+	fmt.Println(factorial)
 }

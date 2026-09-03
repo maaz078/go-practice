@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"maps"
 )
 
 func main() {
@@ -23,9 +22,21 @@ func main() {
 	// } else {
 	// 	fmt.Println("bad")
 	// }
+	// m := map[string]int{"phone": 20, "price": 40}
+	// ok := m["phone"]
+	// if ok{
+	// 	fmt.Println("all ")
+	// }
 
-	m1 := map[string]int{"Price": 30, "phone": 40}
-	m2 := map[string]int{"Price": 30, "phone": 40}
+	// m1 := map[string]int{"Price": 30, "phone": 40}
+	// m2 := map[string]int{"Price": 30, "phone": 40}
 
-	fmt.Println(maps.Equal(m1, m2))
+	// fmt.Println(maps.Equal(m1, m2))
+
+	// m := map[string]int{"phone": 3000}
+	// fmt.Println(m["phone"])
+
+	m := make(map[string]int)
+	m["phone"] = 3000
+	fmt.Println(m["phone"])
 }
