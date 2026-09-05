@@ -7,19 +7,29 @@ import "fmt"
 // 	fmt.Println("In changeNum", *num)
 // }
 
+func changeAge(age *int) {
+	*age = 25
+}
+
 func main() {
 
-	age := 18
-	old := &age
-	fmt.Println("value", age)
+	age := 20
 
-	fmt.Println("address", old)
-	fmt.Println("value through pointer: ", *old)
+	changeAge(&age)
 
-	a := 10
-	b := &a
-	*b = 20
-	fmt.Println(a)
+	fmt.Println(age)
+
+	// age := 18
+	// old := &age
+	// fmt.Println("value", age)
+
+	// fmt.Println("address", old)
+	// fmt.Println("value through pointer: ", *old)
+
+	// a := 10
+	// b := &a
+	// *b = 20
+	// fmt.Println(a)
 
 	// num := 1
 	// changenum(&num)

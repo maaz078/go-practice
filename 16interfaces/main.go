@@ -4,28 +4,27 @@ import "fmt"
 
 type payment struct{}
 
-func (p payment) makePayments(amount float64) {
-	// rozarpayPaymentGW := rozarpay{}
-	// rozarpayPaymentGW.pay(amount)
+func (p payment) makepayment(amount float32) {
+	// getpaymentWT := rozarpay{}
+	// getpaymentWT.pay(amount)
 
-	stripePaymentGW := stripe{}
-	stripePaymentGW.pay(amount)
+	stripeWT := stripe{}
+	stripeWT.pay(amount)
 }
 
 type rozarpay struct{}
 
-func (r rozarpay) pay(amount float64) {
-	fmt.Println("making payment using rozarpay...", amount)
+func (r rozarpay) pay(amount float32) {
+	fmt.Println("making payment from rozarpay", amount)
 }
 
 type stripe struct{}
 
-func (s stripe) pay(amount float64) {
-	fmt.Println("making payment using stripe...", amount)
+func (s stripe) pay(amount float32) {
+	fmt.Println("making payment from stripe", amount)
 }
 
 func main() {
-
 	newpayment := payment{}
-	newpayment.makePayments(100)
+	newpayment.makepayment(200)
 }
