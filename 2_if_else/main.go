@@ -3,39 +3,38 @@ package main
 import "fmt"
 
 func main() {
+
 	// age := 20
 	// if age > 18 {
-	// 	fmt.Println("you are adult")
+	// 	fmt.Println("adult")
 	// } else {
-	// 	fmt.Println("you are not adult")
+	// 	fmt.Println("not adult")
 	// }
 
-	// var marks int
-	// fmt.Println("Enter your marks...")
-	// fmt.Scan(&marks)
+	// var mark int
+	// fmt.Println("enter your marks...")
+	// fmt.Scan(&mark)
 
-	// if marks >= 90 {
-	// 	fmt.Println("Great A")
-	// } else if marks >= 80 {
-	// 	fmt.Println("Great B")
-	// } else if marks >= 70 {
-	// 	fmt.Println("great C")
-	// } else if marks >= 60 {
-	// 	fmt.Println("great D")
-	// } else if marks >= 40 {
-	// 	fmt.Println("Great F")
+	// if mark >= 90 {
+	// 	fmt.Println("Grade A")
+	// } else if mark >= 80 {
+	// 	fmt.Println("Grade B")
+	// } else if mark >= 60 {
+	// 	fmt.Println("Grade C")
+	// } else if mark >= 40 {
+	// 	fmt.Println("Grade E")
 	// } else {
-	// 	fmt.Println("Fail")
+	// 	fmt.Println("fail")
 	// }
 
 	// age := 20
 	// if age >= 18 && age <= 60 {
-	// 	fmt.Println("Eligible")
+	// 	fmt.Println("eligible")
 	// }
 
 	// day := "Sunday"
-	// if day == "saturday" || day == "Sunday" {
-	// 	fmt.Println("Weekend")
+	// if day == "Sunday" || day == "Saturday" {
+	// 	fmt.Println("weekend")
 	// }
 
 	// isStudent := false

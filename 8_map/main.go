@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+
 	student := map[string]int{
 		"Math":    98,
 		"English": 40,
@@ -19,18 +20,39 @@ func main() {
 	delete(student, "Urdu")
 	fmt.Println(student)
 
-	students := make(map[string]int)
+	marks, exits := student["Math"]
+	fmt.Println(marks)
+	fmt.Println(exits)
 
-	var name string
-	var mark int
+	for student, mark := range student {
+		fmt.Println(student, mark)
+	}
 
-	fmt.Print("enter your name ")
-	fmt.Scan(&name)
+	// students := make(map[string]int)
 
-	fmt.Println("enter your mark ")
-	fmt.Scan(&mark)
+	// var name string
+	// var mark int
 
-	students[name] = mark
+	// fmt.Print("enter your name ")
+	// fmt.Scan(&name)
 
-	fmt.Println(students)
+	// fmt.Println("enter your mark ")
+	// fmt.Scan(&mark)
+
+	// students[name] = mark
+
+	// fmt.Println(students)
+
+	//Use a map to count how many times each number appears.
+	numbers := []int{1, 2, 2, 3, 3, 3, 4, 4}
+
+	frequency := make(map[int]int)
+
+	for _, num := range numbers {
+		frequency[num]++
+	}
+
+	for num, count := range frequency {
+		fmt.Println(num, "→", count)
+	}
 }

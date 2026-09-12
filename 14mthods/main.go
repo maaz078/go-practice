@@ -12,12 +12,16 @@ type order struct {
 	createdAt time.Time
 }
 
+// func (o *order) changeStatus(status string) {
+// 	o.status = status
+// }
+
 func (o *order) changeStatus(status string) {
 	o.status = status
 }
 
-func (o order) getAmount() float32 {
-	return float32(o.amount)
+func (o order) getAmount() (float64, string) {
+	return o.amount, o.id
 }
 
 func main() {
@@ -27,12 +31,10 @@ func main() {
 		status:    "pending",
 		createdAt: time.Now(),
 	}
-	myOrder.changeStatus("lol")
-	fmt.Println(myOrder.getAmount())
 
-	language := struct {
-		name   string
-		isgood bool
-	}{"maaz", true}
-	fmt.Println(language)
+	// myOrder.changeStatus("lol")
+	myOrder.changeStatus("canceles")
+	fmt.Println(myOrder.getAmount())
+	fmt.Println(myOrder)
+
 }

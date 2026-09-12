@@ -1,74 +1,59 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-// 1 func great() {
-// 	fmt.Println("hello")
-// }
+// Write a function named greet that prints: Call the function from main().
+func great() {
+	fmt.Println("hellooo")
+}
 
-//2 func great(name string) {
-// 	fmt.Println("hello", name)
-// }
+// Write a function that accepts a name as a parameter and prints:
+func g(name string) {
+	fmt.Println("helllooo", name)
+}
 
-//3 func great(a int, b int) {
-// 	fmt.Println(a + b)
-// }
-
-//4 func great(a int, b int) int {
-// 	return a + b
-// }
-
-//5 func great(a int, b int) int {
-// 	return a * b
-// }
-
-//7 func add(a int, b int) int {
-// 	return a + b
-// }
-
-//8 func calculate(a int, b int) (int, int) {
-// 	sum := a + b
-// 	diff := a - b
-
-// 	return sum, diff
-// }
-
-//Write a function that accepts a name as a parameter and prints:
-// func great(name string) {
-// 	fmt.Println("hello", name)
-// }
-
-//Write a function add() that accepts two integers and returns their sum.
-func great(a int, b int) int {
+// Write a function add() that accepts two integers and returns their sum.
+func add(a int, b int) int {
 	return a + b
 }
+
+// Calculator Functions Create separate functions for:add()subtract()multiply()divide()
+func sub(a int, b int) int {
+	return a - b
+}
+
+//Q7.⭐Multiple Return Values Write a function that accepts two integers and returns:
+
+// Write a function named factorial() that accepts an integer and returns its factorial.
+func factorial(n int) int {
+	result := 1
+
+	for i := 1; i <= n; i++ {
+		result *= i
+	}
+	return result
+}
+func man(a int, b int) (int, int, int) {
+	sum := a + b
+	diff := a - b
+	product := a * b
+
+	return sum, diff, product
+}
 func main() {
+	great()
+	g("Maaz")
+	r := add(2, 3)
+	fmt.Println(r)
+	s := sub(2, 3)
+	fmt.Println(s)
 
-	// great()
+	sum, diff, product := man(5, 10)
+	fmt.Println(sum)
+	fmt.Println(diff)
+	fmt.Println(product)
 
-	// great("Maaz")
-
-	// great(2, 3)
-
-	// result := great(2, 3)
-	// fmt.Println(result)
-
-	// var a, b int
-	// fmt.Println("enter your first number")
-	// fmt.Scan(&a)
-
-	// fmt.Println("enter your second number")
-	// fmt.Scan(&b)
-
-	// result := add(a, b)
-	// fmt.Println("Sum= ", result)
-
-	// sum, diff := calculate(23, 34)
-	// fmt.Println("Sum: ", sum)
-	// fmt.Println("Diff: ", diff)
-
-	// great("maaz")
-	result := great(2, 3)
-	fmt.Println(result)
-
+	fmt.Println(factorial(5))
 }

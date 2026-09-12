@@ -1,21 +1,16 @@
 package main
 
-import (
-	"fmt"
-	"sync"
-)
+import "fmt"
 
-func task(id int, wg *sync.WaitGroup) {
-	defer wg.Done()
-	fmt.Println("doing task,", id)
+func worker(i int) {
+	fmt.Printf("worker %d started\n", i)
+	//some task happing there
+	fmt.Printf("worker %d end\n", i)
 }
 
 func main() {
-	var wg sync.WaitGroup
-
-	for i := 0; i <= 10; i++ {
-		wg.Add(1)
-		go task(i, &wg)
+	for i := 1; i <= 3; i++ {
+		go worker(i)
 	}
-	wg.Wait()
+	fmt.Println("worker task completed")
 }

@@ -38,9 +38,48 @@ func main() {
 	// for i := 0; i < len(number); i++ {
 	// 	fmt.Println(number[i])
 	// }
+	//Write a Go program that prints every element of a slice using the range keyword.
+	// number := []int{1, 2, 3, 4, 5}
+	// for _, v := range number {
+	// 	fmt.Println(v)
+	// }
 
-	a := 10
-	b := &a
-	*b = 20
-	fmt.Println(*b)
+	//Write a Go program to calculate the sum of all elements in:
+	// number := []int{1, 2, 3, 4, 5}
+	// sum := 0
+	// for i := 0; i < len(number); i++ {
+	// 	sum += i
+	// }
+	// fmt.Println(sum)
+
+	// Write a Go program to find the largest number in a slice.
+	// a := []int{1, 2, 3, 4, 5}
+	// max := a[0]
+	// for i := 1; i < len(a); i++ {
+	// 	if a[i] > max {
+	// 		max = a[i]
+	// 	}
+
+	// }
+	// fmt.Println(max)
+
+	//Write a Go program that asks the user how many numbers they want to enter,
+	//  creates a slice of that size, takes the numbers as input, and prints the slice.
+
+	// var n int
+	// println("how many number you want to enter?")
+	// fmt.Scan(&n)
+
+	// num := make([]int, n)
+
+	// for i := 0; i < n; i++ {
+	// 	fmt.Println("enter number: ")
+	// 	fmt.Scan(&num[i])
+	// }
+	// fmt.Println("Slice: ", num)
+
+	//Write a Go program that searches for a given number in a slice.
+	num := []int{10, 20, 30, 40, 50}
+	num = append(num[:2], num[3:]...)
+	fmt.Println(num)
 }
